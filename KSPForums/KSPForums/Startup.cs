@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using KSPForums.Models;
 using KSPForums.Data.Models;
+using KSPForums.Service;
 
 namespace KSPForums
 {
@@ -30,6 +31,9 @@ namespace KSPForums
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            // add application services
+            services.AddScoped<IForum, ForumService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

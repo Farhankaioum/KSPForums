@@ -3,6 +3,7 @@ using KSPForums.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace KSPForums.Service
@@ -39,7 +40,14 @@ namespace KSPForums.Service
 
         public Forum GetById(int id)
         {
-            throw new NotImplementedException();
+            var forum = _context.Forums.Where(forum => forum.Id == id)
+                    .Include(f => f.Posts)
+                        .ThenInclude(f => f.User)
+                     .Include(f => f.Posts)
+                        .ThenInclude(p => p.Replies)
+                            .ThenInclude(r => r.User)
+                    .FirstOrDefault();
+            return forum;
         }
 
         public Task UpdateForumDescription(int forumId, string newDescription)

@@ -1,0 +1,11 @@
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Service\bin\Debug\netcoreapp3.1\KSPForums.Service.deps.json
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Service\bin\Debug\netcoreapp3.1\KSPForums.Service.dll
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Service\bin\Debug\netcoreapp3.1\KSPForums.Service.pdb
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Service\bin\Debug\netcoreapp3.1\KSPForums.Data.dll
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Service\bin\Debug\netcoreapp3.1\KSPForums.Data.pdb
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Service\obj\Debug\netcoreapp3.1\KSPForums.Service.csprojAssemblyReference.cache
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Service\obj\Debug\netcoreapp3.1\KSPForums.Service.AssemblyInfoInputs.cache
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Service\obj\Debug\netcoreapp3.1\KSPForums.Service.AssemblyInfo.cs
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Service\obj\Debug\netcoreapp3.1\KSPForums.Service.csproj.CopyComplete
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Service\obj\Debug\netcoreapp3.1\KSPForums.Service.dll
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Service\obj\Debug\netcoreapp3.1\KSPForums.Service.pdb

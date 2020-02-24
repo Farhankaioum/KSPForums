@@ -1,10 +1,9 @@
 G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Data\bin\Debug\netcoreapp3.1\KSPForums.Data.deps.json
-G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Data\bin\Debug\netcoreapp3.1\KSPForums.Data.dll
-G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Data\obj\Debug\netcoreapp3.1\KSPForums.Data.csprojAssemblyReference.cache
-G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Data\obj\Debug\netcoreapp3.1\KSPForums.Data.AssemblyInfoInputs.cache
-G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Data\obj\Debug\netcoreapp3.1\KSPForums.Data.AssemblyInfo.cs
 G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Data\bin\Debug\netcoreapp3.1\KSPForums.Data.runtimeconfig.json
 G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Data\bin\Debug\netcoreapp3.1\KSPForums.Data.runtimeconfig.dev.json
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Data\bin\Debug\netcoreapp3.1\KSPForums.Data.dll
 G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Data\bin\Debug\netcoreapp3.1\KSPForums.Data.pdb
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Data\obj\Debug\netcoreapp3.1\KSPForums.Data.AssemblyInfoInputs.cache
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Data\obj\Debug\netcoreapp3.1\KSPForums.Data.AssemblyInfo.cs
 G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Data\obj\Debug\netcoreapp3.1\KSPForums.Data.dll
 G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums.Data\obj\Debug\netcoreapp3.1\KSPForums.Data.pdb
