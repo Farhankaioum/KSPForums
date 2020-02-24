@@ -1,5 +1,6 @@
 ﻿using KSPForums.Data;
 using KSPForums.Data.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,9 +38,15 @@ namespace KSPForums.Service
             throw new NotImplementedException();
         }
 
-        public IPost GetById(int id)
+        public Post GetById(int id)
         {
-            throw new NotImplementedException();
+            var post = _context.Posts.Where(post => post.Id == id)
+                .Include(post => post.User)
+                .Include(post => post.Replies)
+                    .ThenInclude(reply => reply.User)
+                .Include(post => post.Forum)
+                .First();
+            return post;
         }
 
         public IEnumerable<Post> GetFilteredPosts(string searchQuery)

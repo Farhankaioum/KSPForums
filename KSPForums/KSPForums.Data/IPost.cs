@@ -6,7 +6,7 @@ namespace KSPForums.Data
 {
     public interface IPost
     {
-        IPost GetById(int id);
+        Post GetById(int id);
         IEnumerable<Post> GetAll();
         IEnumerable<Post> GetFilteredPosts(string searchQuery);
         public IEnumerable<Post> GetPostByForum(int id);
