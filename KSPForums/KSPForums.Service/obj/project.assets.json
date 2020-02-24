@@ -23,21 +23,6 @@
           "lib/netcoreapp2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/3.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "3.1.0"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -49,35 +34,6 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Identity.UI/3.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "3.1.0",
-          "Microsoft.Extensions.Identity.Stores": "3.1.0",
-          "Newtonsoft.Json": "12.0.2"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V3.dll": {},
-          "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V4.dll": {},
-          "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V3.dll": {},
-          "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V4.dll": {},
-          "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ],
-        "build": {
-          "buildTransitive/Microsoft.AspNetCore.Identity.UI.props": {},
-          "buildTransitive/Microsoft.AspnetCore.Identity.UI.targets": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Microsoft.AspNetCore.Identity.UI.props": {},
-          "buildMultiTargeting/Microsoft.AspnetCore.Identity.UI.targets": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
@@ -98,7 +54,7 @@
           "lib/netcoreapp2.1/Microsoft.Bcl.HashCode.dll": {}
         }
       },
-      "Microsoft.CSharp/4.7.0": {
+      "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -174,22 +130,6 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Design/3.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CSharp": "4.7.0",
-          "Microsoft.EntityFrameworkCore.Relational": "3.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
-        },
-        "build": {
-          "build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props": {}
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -213,18 +153,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Tools/3.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "3.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {}
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/3.1.0": {
@@ -309,36 +237,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
-        }
-      },
-      "Microsoft.Extensions.FileProviders.Abstractions/3.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "3.1.0"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
-        }
-      },
-      "Microsoft.Extensions.FileProviders.Embedded/3.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.FileProviders.Abstractions": "3.1.0"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Embedded.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Embedded.dll": {}
-        },
-        "build": {
-          "build/netstandard2.0/_._": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/_._": {}
         }
       },
       "Microsoft.Extensions.Identity.Core/3.1.0": {
@@ -472,15 +370,6 @@
             "assetType": "runtime",
             "rid": "win"
           }
-        }
-      },
-      "Newtonsoft.Json/12.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.native.System/4.3.0": {
@@ -1473,20 +1362,6 @@
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/3.1.0": {
-      "sha512": "6CRabsNJTn8DtbtTGJe+8uh2rNL65AMlShbP74A0I/B7l+F4JPxudd7jj5E+Os5ETKkWL5IRULMR3bqpyR2soA==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/3.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "lib/netcoreapp3.1/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll",
-        "lib/netcoreapp3.1/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.xml",
-        "microsoft.aspnetcore.diagnostics.entityframeworkcore.3.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.diagnostics.entityframeworkcore.nuspec"
-      ]
-    },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/3.1.0": {
       "sha512": "aH7iLcveq4MoL4/NBD2ZxhNWHEi7N6LwFyLRHTzMN01NXkahJZXLP7Un4UgPcpaRlm3GsKcIfDJHD/MhW6OACg==",
       "type": "package",
@@ -1501,96 +1376,6 @@
         "lib/netstandard2.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml",
         "microsoft.aspnetcore.identity.entityframeworkcore.3.1.0.nupkg.sha512",
         "microsoft.aspnetcore.identity.entityframeworkcore.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Identity.UI/3.1.0": {
-      "sha512": "OO4sRKqtq6++CGdTs1Olr1MyXyV9zPgM4yC0Y64LqlzTTn3qy2Jcbc7De8sGBL1dfXUMmPYu0XnjGQ+ETfHBSw==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.identity.ui/3.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.txt",
-        "build/Microsoft.AspNetCore.Identity.UI.props",
-        "build/Microsoft.AspnetCore.Identity.UI.targets",
-        "buildMultiTargeting/Microsoft.AspNetCore.Identity.UI.props",
-        "buildMultiTargeting/Microsoft.AspnetCore.Identity.UI.targets",
-        "buildTransitive/Microsoft.AspNetCore.Identity.UI.props",
-        "buildTransitive/Microsoft.AspnetCore.Identity.UI.targets",
-        "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V3.dll",
-        "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V4.dll",
-        "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.dll",
-        "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.xml",
-        "microsoft.aspnetcore.identity.ui.3.1.0.nupkg.sha512",
-        "microsoft.aspnetcore.identity.ui.nuspec",
-        "staticwebassets/V3/css/site.css",
-        "staticwebassets/V3/js/site.js",
-        "staticwebassets/V3/lib/bootstrap/LICENSE/LICENSE",
-        "staticwebassets/V3/lib/bootstrap/dist/css/bootstrap-theme.css",
-        "staticwebassets/V3/lib/bootstrap/dist/css/bootstrap-theme.css.map",
-        "staticwebassets/V3/lib/bootstrap/dist/css/bootstrap-theme.min.css",
-        "staticwebassets/V3/lib/bootstrap/dist/css/bootstrap-theme.min.css.map",
-        "staticwebassets/V3/lib/bootstrap/dist/css/bootstrap.css",
-        "staticwebassets/V3/lib/bootstrap/dist/css/bootstrap.css.map",
-        "staticwebassets/V3/lib/bootstrap/dist/css/bootstrap.min.css",
-        "staticwebassets/V3/lib/bootstrap/dist/css/bootstrap.min.css.map",
-        "staticwebassets/V3/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
-        "staticwebassets/V3/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
-        "staticwebassets/V3/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
-        "staticwebassets/V3/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff",
-        "staticwebassets/V3/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2",
-        "staticwebassets/V3/lib/bootstrap/dist/js/bootstrap.js",
-        "staticwebassets/V3/lib/bootstrap/dist/js/bootstrap.min.js",
-        "staticwebassets/V3/lib/bootstrap/dist/js/npm.js",
-        "staticwebassets/V3/lib/jquery-validation-unobtrusive/LICENSE.txt",
-        "staticwebassets/V3/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-        "staticwebassets/V3/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-        "staticwebassets/V3/lib/jquery-validation/LICENSE.md",
-        "staticwebassets/V3/lib/jquery-validation/dist/additional-methods.js",
-        "staticwebassets/V3/lib/jquery-validation/dist/additional-methods.min.js",
-        "staticwebassets/V3/lib/jquery-validation/dist/jquery.validate.js",
-        "staticwebassets/V3/lib/jquery-validation/dist/jquery.validate.min.js",
-        "staticwebassets/V3/lib/jquery/LICENSE.txt",
-        "staticwebassets/V3/lib/jquery/dist/jquery.js",
-        "staticwebassets/V3/lib/jquery/dist/jquery.min.js",
-        "staticwebassets/V3/lib/jquery/dist/jquery.min.map",
-        "staticwebassets/V4/css/site.css",
-        "staticwebassets/V4/favicon.ico",
-        "staticwebassets/V4/js/site.js",
-        "staticwebassets/V4/lib/bootstrap/LICENSE/LICENSE",
-        "staticwebassets/V4/lib/bootstrap/dist/css/bootstrap-grid.css",
-        "staticwebassets/V4/lib/bootstrap/dist/css/bootstrap-grid.css.map",
-        "staticwebassets/V4/lib/bootstrap/dist/css/bootstrap-grid.min.css",
-        "staticwebassets/V4/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-        "staticwebassets/V4/lib/bootstrap/dist/css/bootstrap-reboot.css",
-        "staticwebassets/V4/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-        "staticwebassets/V4/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-        "staticwebassets/V4/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-        "staticwebassets/V4/lib/bootstrap/dist/css/bootstrap.css",
-        "staticwebassets/V4/lib/bootstrap/dist/css/bootstrap.css.map",
-        "staticwebassets/V4/lib/bootstrap/dist/css/bootstrap.min.css",
-        "staticwebassets/V4/lib/bootstrap/dist/css/bootstrap.min.css.map",
-        "staticwebassets/V4/lib/bootstrap/dist/js/bootstrap.bundle.js",
-        "staticwebassets/V4/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-        "staticwebassets/V4/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-        "staticwebassets/V4/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-        "staticwebassets/V4/lib/bootstrap/dist/js/bootstrap.js",
-        "staticwebassets/V4/lib/bootstrap/dist/js/bootstrap.js.map",
-        "staticwebassets/V4/lib/bootstrap/dist/js/bootstrap.min.js",
-        "staticwebassets/V4/lib/bootstrap/dist/js/bootstrap.min.js.map",
-        "staticwebassets/V4/lib/jquery-validation-unobtrusive/LICENSE.txt",
-        "staticwebassets/V4/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-        "staticwebassets/V4/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-        "staticwebassets/V4/lib/jquery-validation/LICENSE.md",
-        "staticwebassets/V4/lib/jquery-validation/dist/additional-methods.js",
-        "staticwebassets/V4/lib/jquery-validation/dist/additional-methods.min.js",
-        "staticwebassets/V4/lib/jquery-validation/dist/jquery.validate.js",
-        "staticwebassets/V4/lib/jquery-validation/dist/jquery.validate.min.js",
-        "staticwebassets/V4/lib/jquery/LICENSE.txt",
-        "staticwebassets/V4/lib/jquery/dist/jquery.js",
-        "staticwebassets/V4/lib/jquery/dist/jquery.min.js",
-        "staticwebassets/V4/lib/jquery/dist/jquery.min.map"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
@@ -1644,10 +1429,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.CSharp/4.7.0": {
-      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+    "Microsoft.CSharp/4.5.0": {
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
-      "path": "microsoft.csharp/4.7.0",
+      "path": "microsoft.csharp/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1660,7 +1445,6 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
-        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -1670,7 +1454,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.7.0.nupkg.sha512",
+        "microsoft.csharp.4.5.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -1798,22 +1582,6 @@
         "packageIcon.png"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/3.1.0": {
-      "sha512": "zxyus0fUcAhst5Essf2g+GFgKN7BCITJ004DR4uAkLkn8lLS5MoxNDCBNjCF5lGrNx7a6wBaqQE7tgt7Ss2Hog==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.design/3.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net461/Microsoft.EntityFrameworkCore.Design.props",
-        "build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props",
-        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll",
-        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.3.1.0.nupkg.sha512",
-        "microsoft.entityframeworkcore.design.nuspec",
-        "packageIcon.png"
-      ]
-    },
     "Microsoft.EntityFrameworkCore.Relational/3.1.0": {
       "sha512": "eeiqVqzXVuwQsUbqXMyXSEUn/EHB9zmDsr5f/+v6uEt0ir7pgItuIi3I7QV4xvM/s0KbFsqGUOrAFPeRHE3plg==",
       "type": "package",
@@ -1840,30 +1608,6 @@
         "microsoft.entityframeworkcore.sqlserver.3.1.0.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec",
         "packageIcon.png"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Tools/3.1.0": {
-      "sha512": "b209nM8vHZXKG6hqZH2cYLpSVEmty9aDZf2gcYyJhpaEhf94AGdRfh8mlZCclJudjk07B37ebRysT1G//0IRzQ==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/3.1.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.tools.3.1.0.nupkg.sha512",
-        "microsoft.entityframeworkcore.tools.nuspec",
-        "packageIcon.png",
-        "tools/EntityFrameworkCore.PS2.psd1",
-        "tools/EntityFrameworkCore.PS2.psm1",
-        "tools/EntityFrameworkCore.psd1",
-        "tools/EntityFrameworkCore.psm1",
-        "tools/about_EntityFrameworkCore.help.txt",
-        "tools/init.ps1",
-        "tools/net461/any/ef.exe",
-        "tools/net461/win-x86/ef.exe",
-        "tools/netcoreapp2.0/any/ef.dll",
-        "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/3.1.0": {
@@ -1978,43 +1722,6 @@
         "microsoft.extensions.dependencyinjection.abstractions.3.1.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "packageIcon.png"
-      ]
-    },
-    "Microsoft.Extensions.FileProviders.Abstractions/3.1.0": {
-      "sha512": "G3iBMOnn3tETEUvkE9J3a23wQpRkiXZp73zR0XNlicjLFhkeWW1FCaC2bTjrgHhPi2KO6x0BXnHvVuJPIlygBQ==",
-      "type": "package",
-      "path": "microsoft.extensions.fileproviders.abstractions/3.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll",
-        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
-        "microsoft.extensions.fileproviders.abstractions.3.1.0.nupkg.sha512",
-        "microsoft.extensions.fileproviders.abstractions.nuspec",
-        "packageIcon.png"
-      ]
-    },
-    "Microsoft.Extensions.FileProviders.Embedded/3.1.0": {
-      "sha512": "8mRwL8WZ3vUgnERk1O/q2a45AUIFx+uQYfx+9lS5/kpNaD2BBCbcaY4HFDTJNpWuiNI+MitkeGd3EEWKe+LY8w==",
-      "type": "package",
-      "path": "microsoft.extensions.fileproviders.embedded/3.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.props",
-        "build/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.targets",
-        "buildMultiTargeting/Microsoft.Extensions.FileProviders.Embedded.props",
-        "buildMultiTargeting/Microsoft.Extensions.FileProviders.Embedded.targets",
-        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Embedded.dll",
-        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Embedded.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.xml",
-        "microsoft.extensions.fileproviders.embedded.3.1.0.nupkg.sha512",
-        "microsoft.extensions.fileproviders.embedded.nuspec",
-        "packageIcon.png",
-        "tasks/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.Manifest.Task.dll"
       ]
     },
     "Microsoft.Extensions.Identity.Core/3.1.0": {
@@ -2221,36 +1928,6 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "Newtonsoft.Json/12.0.2": {
-      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
-      "type": "package",
-      "path": "newtonsoft.json/12.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -5361,12 +5038,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "KSPForums.Data >= 1.0.0",
-      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.0",
-      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.0",
-      "Microsoft.AspNetCore.Identity.UI >= 3.1.0",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.0",
-      "Microsoft.EntityFrameworkCore.Tools >= 3.1.0"
+      "KSPForums.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5376,11 +5048,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums\\KSPForums.csproj",
-      "projectName": "KSPForums",
-      "projectPath": "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums\\KSPForums.csproj",
+      "projectUniqueName": "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums.Service\\KSPForums.Service.csproj",
+      "projectName": "KSPForums.Service",
+      "projectPath": "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums.Service\\KSPForums.Service.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums\\obj\\",
+      "outputPath": "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5413,28 +5085,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[3.1.0, )"
-          },
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[3.1.0, )"
-          },
-          "Microsoft.AspNetCore.Identity.UI": {
-            "target": "Package",
-            "version": "[3.1.0, )"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "[3.1.0, )"
-          },
-          "Microsoft.EntityFrameworkCore.Tools": {
-            "target": "Package",
-            "version": "[3.1.0, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -5446,9 +5096,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

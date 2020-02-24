@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums\\KSPForums.csproj": {}
+    "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums.Service\\KSPForums.Service.csproj": {}
   },
   "projects": {
     "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums.Data\\KSPForums.Data.csproj": {
@@ -79,14 +79,14 @@
         }
       }
     },
-    "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums\\KSPForums.csproj": {
+    "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums.Service\\KSPForums.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums\\KSPForums.csproj",
-        "projectName": "KSPForums",
-        "projectPath": "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums\\KSPForums.csproj",
+        "projectUniqueName": "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums.Service\\KSPForums.Service.csproj",
+        "projectName": "KSPForums.Service",
+        "projectPath": "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums.Service\\KSPForums.Service.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums\\obj\\",
+        "outputPath": "G:\\Farhan(Vacation)\\NewWorld\\Core(Prac)\\Forum\\KSPForums\\KSPForums.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -119,28 +119,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.1.0, )"
-            },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.1.0, )"
-            },
-            "Microsoft.AspNetCore.Identity.UI": {
-              "target": "Package",
-              "version": "[3.1.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[3.1.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "target": "Package",
-              "version": "[3.1.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -152,9 +130,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

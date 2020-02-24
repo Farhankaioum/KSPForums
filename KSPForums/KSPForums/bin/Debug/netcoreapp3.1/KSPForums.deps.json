@@ -1216,7 +1216,8 @@
       "KSPForums.Data/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.0",
-          "Microsoft.EntityFrameworkCore": "3.1.0"
+          "Microsoft.EntityFrameworkCore": "3.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0"
         },
         "runtime": {
           "KSPForums.Data.dll": {}
