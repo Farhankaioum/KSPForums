@@ -2,22 +2,29 @@
 using KSPForums.Data.Models;
 using KSPForums.Models.Post;
 using KSPForums.Models.Reply;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace KSPForums.Controllers
 {
     public class PostController : Controller
     {
         private readonly IPost _postService;
+        private readonly IForum _forumService;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public PostController(IPost postService)
+        public PostController(IPost postService, IForum forumService, UserManager<ApplicationUser> userManager)
         {
-            this._postService = postService;
+            _postService = postService;
+            _forumService = forumService;
+            _userManager = userManager;
         }
 
+        #region Index page
         // for post via id
         public IActionResult Index(int id)
         {
@@ -36,7 +43,7 @@ namespace KSPForums.Controllers
                 PostContent = post.Content,
                 Replies = replies
             };
-            return View();
+            return View(model);
         }
 
         private IEnumerable<PostReplyModel> BuildPostReplies(IEnumerable<PostReply> replies)
@@ -49,6 +56,51 @@ namespace KSPForums.Controllers
                 AuthorRating = reply.User.Rating,
                 ReplyContent = reply.Content
             });
+        }
+        #endregion
+
+        // for creating post
+        [HttpGet]
+        public IActionResult Create(int id)
+        {
+            // Id is forum id
+
+            var forum = _forumService.GetById(id);
+
+            var model = new NewPostModel
+            {
+                ForumName = forum.Title,
+                ForumId = forum.Id,
+                ForumImageUrl = forum.ImageUrl,
+                AuthorName = User.Identity.Name,
+                
+            };
+            return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddPost(NewPostModel model)
+        {
+            var userId = _userManager.GetUserId(User);
+            var user =  _userManager.FindByIdAsync(userId).Result;
+            var post = BuildPost(model, user);
+
+            _postService.Add(post).Wait(); // for block the current thread
+            
+            return RedirectToAction("Index", "Post", new { post.Id });
+
+        }
+
+        private Post BuildPost(NewPostModel model, ApplicationUser user)
+        {
+            var forum = _forumService.GetById(model.ForumId);
+            return new Post
+            {
+                Title = model.Title,
+                Content = model.Content,
+                Created = DateTime.Now,
+                User = user,
+                Forum = forum
+            };
         }
     }
 }

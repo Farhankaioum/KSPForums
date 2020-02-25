@@ -4,6 +4,9 @@
 }
 
 <h1>Welcome to the @Model.Forum.Name Forum!</h1>
+<span id="headingBtn"><a asp-controller="Post" asp-action="Create" asp-route-id="@Model.Forum.Id" class="btn btn-newPost btn-link">
+    Create Post</a>
+ </span>
 
 @if (Model.Posts.Any())
 {

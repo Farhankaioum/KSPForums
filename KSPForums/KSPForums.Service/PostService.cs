@@ -18,11 +18,6 @@ namespace KSPForums.Service
             _context = context;
         }
 
-        public Task Add(Post post)
-        {
-            throw new NotImplementedException();
-        }
-
         public Task Delete(int id)
         {
             throw new NotImplementedException();
@@ -54,9 +49,10 @@ namespace KSPForums.Service
             throw new NotImplementedException();
         }
 
-        Task IPost.Add(Post post)
+       async Task  IPost.Add(Post post)
         {
-            throw new NotImplementedException();
+            _context.Add(post);
+            await _context.SaveChangesAsync();
         }
 
         Task IPost.Delete(int id)
@@ -74,10 +70,7 @@ namespace KSPForums.Service
             throw new NotImplementedException();
         }
 
-        IPost IPost.GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         IEnumerable<Post> IPost.GetFilteredPosts(string searchQuery)
         {
