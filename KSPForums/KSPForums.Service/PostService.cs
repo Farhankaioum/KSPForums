@@ -18,21 +18,19 @@ namespace KSPForums.Service
             _context = context;
         }
 
-        public Task Delete(int id)
-        {
-            throw new NotImplementedException();
-        }
+        
 
-        public Task EditPostContent(int id, string newContent)
-        {
-            throw new NotImplementedException();
-        }
-
+        //for get all post
         public IEnumerable<Post> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Posts
+                    .Include(post => post.User)
+                    .Include(post => post.Replies)
+                        .ThenInclude(reply => reply.User)
+                    .Include(post => post.Forum);
         }
 
+        //for get post via id
         public Post GetById(int id)
         {
             var post = _context.Posts.Where(post => post.Id == id)
@@ -44,39 +42,46 @@ namespace KSPForums.Service
             return post;
         }
 
-        public IEnumerable<Post> GetFilteredPosts(string searchQuery)
+
+        // for getting latest post
+        public IEnumerable<Post> GetLatestPosts(int nPosts)
         {
-            throw new NotImplementedException();
+          return GetAll().OrderByDescending(post => post.Created).Take(nPosts);
         }
 
-       async Task  IPost.Add(Post post)
+        // for adding new post in Post table
+        async Task  IPost.Add(Post post)
         {
             _context.Add(post);
             await _context.SaveChangesAsync();
         }
 
+        //for delete post
         Task IPost.Delete(int id)
         {
             throw new NotImplementedException();
         }
 
+        //For edit post content
         Task IPost.EditPostContent(int id, string newContent)
         {
             throw new NotImplementedException();
         }
 
+        // for get all post
         IEnumerable<Post> IPost.GetAll()
         {
             throw new NotImplementedException();
         }
 
-       
 
+        // for getting all post via search query
         IEnumerable<Post> IPost.GetFilteredPosts(string searchQuery)
         {
             throw new NotImplementedException();
         }
 
+        // for get post by forum id
         IEnumerable<Post> IPost.GetPostByForum(int id)
         {
             var posts = _context.Forums

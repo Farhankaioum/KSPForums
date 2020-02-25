@@ -14,6 +14,6 @@ namespace KSPForums.Data
         Task Add(Post post);
         Task Delete(int id);
         Task EditPostContent(int id, string newContent);
-        
+        IEnumerable<Post> GetLatestPosts(int nPosts);
     }
 }

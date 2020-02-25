@@ -24,8 +24,8 @@ namespace KSPForums.Controllers
             _userManager = userManager;
         }
 
-        #region Index page
         // for post via id
+        #region Index page
         public IActionResult Index(int id)
         {
             var post = _postService.GetById(id);
@@ -60,6 +60,7 @@ namespace KSPForums.Controllers
         #endregion
 
         // for creating post
+        #region post created 
         [HttpGet]
         public IActionResult Create(int id)
         {
@@ -102,5 +103,8 @@ namespace KSPForums.Controllers
                 Forum = forum
             };
         }
+        #endregion
+
+
     }
 }
