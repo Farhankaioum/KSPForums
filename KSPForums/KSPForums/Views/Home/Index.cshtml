@@ -1,9 +1,9 @@
 ﻿@model KSPForums.Models.Home.HomeIndexModel
 
 <div class="container body-content">
-    <div class="row fromPageSplash">
+    <div class="row frontPageSplash">
         <div class="col-md-6 frontPageLearn">
-            <div class="fromtPageHeading">Learn, Collaborate, Share Knowledge</div>
+            <div class="frontPageHeading">Learn, Collaborate, Share Knowledge</div>
             <p class="frontPageSubHeading">Ksp Forums is the world's fastest growing coding forum</p>
             <div>
                 <form asp-controller="Search" asp-action="Search" method="post">
@@ -21,7 +21,7 @@
                 {
                     <tr>
                         <td>
-                            <div class="formumLogo" style="background-image:url('@post.Forum.ImageUrl'); background-size:100%"></div>
+                            <div class="forumLogo" style="background-image:url('@post.Forum.ImageUrl');"></div>
                             <div class="postTitle">
                                 <a asp-controller="Post" asp-action="Index" asp-route-id="@post.Id">
                                     @post.Title
