@@ -46,7 +46,7 @@ namespace KSPForums.Service
         // for getting latest post
         public IEnumerable<Post> GetLatestPosts(int nPosts)
         {
-          return GetAll().OrderByDescending(post => post.Created).Take(nPosts);
+          return GetAll().OrderByDescending(post => post.Created).AsEnumerable().Take(nPosts);
         }
 
         // for adding new post in Post table

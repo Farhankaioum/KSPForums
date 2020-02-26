@@ -22,6 +22,8 @@ namespace KSPForums.Controllers
             _postService = postService;
             _forumService = forumService;
             _userManager = userManager;
+           
+            
         }
 
         // for post via id
@@ -41,9 +43,20 @@ namespace KSPForums.Controllers
                 AuthorRating = post.User.Rating,
                 Created = post.Created,
                 PostContent = post.Content,
-                Replies = replies
+                Replies = replies,
+                ForumId = post.Forum.Id,
+                ForumName = post.Forum.Title,
+                IsAuthorAdmin = IsAuthorAdmin(post.User)
             };
             return View(model);
+        }
+
+        private bool IsAuthorAdmin(ApplicationUser user)
+        {
+            return _userManager
+                .GetRolesAsync(user)
+                .Result
+                .Contains("Admin");
         }
 
         private IEnumerable<PostReplyModel> BuildPostReplies(IEnumerable<PostReply> replies)
@@ -54,7 +67,8 @@ namespace KSPForums.Controllers
                 AuthroId = reply.User.Id,
                 AuthorImageUrl = reply.User.ProfileImageUrl,
                 AuthorRating = reply.User.Rating,
-                ReplyContent = reply.Content
+                ReplyContent = reply.Content,
+                IsAuthorAdmin = IsAuthorAdmin(reply.User)  
             });
         }
         #endregion
