@@ -9,6 +9,7 @@ namespace KSPForums.Data
         Post GetById(int id);
         IEnumerable<Post> GetAll();
         IEnumerable<Post> GetFilteredPosts(Forum forum, string searchQuery);
+        IEnumerable<Post> GetFilteredPosts(string searchQuery);
         public IEnumerable<Post> GetPostByForum(int id);
 
         Task Add(Post post);

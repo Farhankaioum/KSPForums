@@ -42,6 +42,8 @@ namespace KSPForums.Service
             return post;
         }
 
+      
+
 
         // for getting latest post
         public IEnumerable<Post> GetLatestPosts(int nPosts)
@@ -76,7 +78,11 @@ namespace KSPForums.Service
 
 
         // for getting all post via search query
-         IEnumerable<Post> IPost.GetFilteredPosts(Forum forum, string searchQuery)
+        public IEnumerable<Post> GetFilteredPosts(string searchQuery)
+        {
+           return GetAll().Where(post => post.Title.Contains(searchQuery) || post.Content.Contains(searchQuery));
+        }
+        IEnumerable<Post> IPost.GetFilteredPosts(Forum forum, string searchQuery)
         {
            return string.IsNullOrEmpty(searchQuery)? forum.Posts :
                     forum.Posts.Where(post => post.Title.Contains(searchQuery) || post.Content.Contains(searchQuery));
