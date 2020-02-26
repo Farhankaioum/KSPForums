@@ -76,9 +76,11 @@ namespace KSPForums.Service
 
 
         // for getting all post via search query
-        IEnumerable<Post> IPost.GetFilteredPosts(string searchQuery)
+         IEnumerable<Post> IPost.GetFilteredPosts(Forum forum, string searchQuery)
         {
-            throw new NotImplementedException();
+           return string.IsNullOrEmpty(searchQuery)? forum.Posts :
+                    forum.Posts.Where(post => post.Title.Contains(searchQuery) || post.Content.Contains(searchQuery));
+
         }
 
         // for get post by forum id

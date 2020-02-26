@@ -39,10 +39,11 @@ namespace KSPForums.Controllers
 
         // find specific forum using id
         #region for forum Topic
-        public IActionResult Topic(int id)
+        public IActionResult Topic(int id, string searchQuery)
         {
             var forum = _forumService.GetById(id);
-            var posts = forum.Posts;
+            var posts = _postServices.GetFilteredPosts(forum, searchQuery).ToList();
+            
 
             var postListings = posts.Select(post => new PostListingModel { 
                 
@@ -83,5 +84,10 @@ namespace KSPForums.Controllers
         }
         #endregion
 
+        [HttpPost]
+        public IActionResult Search(int id, string searchQuery)
+        {
+            return RedirectToAction("Topic", new { id, searchQuery });
+        }
     }
 }

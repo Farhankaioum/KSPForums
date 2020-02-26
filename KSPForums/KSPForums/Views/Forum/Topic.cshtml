@@ -5,7 +5,7 @@
 
 <div class="container body-content">
     <div class="row sectionHeader">
-        <div class="sectionHeading">
+        <div class="sectionHeading col-12">
             <span>@Model.Forum.Name Forum</span>
 
             @if (Context.User.Identity.IsAuthenticated)
@@ -18,7 +18,7 @@
             <form asp-controller="Forum" asp-action="Search" method="post">
                 <div class="searchForm">
                     <input asp-for="SearchQuery" type="text" placeholder="Search..." class="searchBar" onfocus="clearThis(this)" />
-                    <button type="submit" class="btn buttonSearch">
+                    <button type="submit" class="btn btn-forumSearch">
                         <i class="material-icons">search</i>
                     </button>
                 </div>
@@ -26,22 +26,26 @@
             </form>
         </div>
 
-    </div>
-    <div class="sectionDescription">
-        <div class="forumLogo" style="background-image:url('@Model.Forum.ImageUrl')"></div>
-        <p>Welcome to the @Model.Forum.Name forum. Please keep postsfriendly and on-topic</p>
-        @if (!User.Identity.IsAuthenticated)
-        {
-            <p>
-                <span>
-                    You must be a
-                    <a asp-controller="Account" asp-action="Register"> registered member</a>
-                    to create a new post
-                </span>
-            </p>
-        }
+        <div class="sectionDescription">
+            <div class="forumLogo" style="background-image:url('@Model.Forum.ImageUrl')"></div>
+            <p>Welcome to the @Model.Forum.Name forum. Please keep postsfriendly and on-topic</p>
+            @if (!User.Identity.IsAuthenticated)
+            {
+                <p>
+                    <span>
+                        You must be a
+                        <a asp-controller="Account" asp-action="Register"> registered member</a>
+                        to create a new post
+                    </span>
+                </p>
+            }
+
+        </div>
 
     </div>
+
+
+
     <div class="row forumIndexContent">
         @if (Model.Posts.Any())
         {
