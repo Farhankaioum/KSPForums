@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using KSPForums.Data;
 using KSPForums.Data.Models;
 using KSPForums.Models.Forum;
@@ -43,7 +40,7 @@ namespace KSPForums.Controllers
                 SearchQuery = searchQuery,
                 EmptySearchResults = areNoResults
             };
-            return View();
+            return View(model);
         }
 
         private ForumListingModel BuildForuListing(Post post)
