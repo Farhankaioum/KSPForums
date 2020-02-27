@@ -40,10 +40,12 @@ namespace KSPForums
             // add application services
             services.AddScoped<IForum, ForumService>();
             services.AddScoped<IPost, PostService>();
+
+            services.AddTransient<DataSeeder>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, DataSeeder dataSeeder)
         {
             if (env.IsDevelopment())
             {
@@ -56,6 +58,8 @@ namespace KSPForums
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+          
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -63,7 +67,9 @@ namespace KSPForums
 
             app.UseAuthentication();
             app.UseAuthorization();
-           
+
+            // calling dataseeder method
+            dataSeeder.SeedSuperUser();
 
             app.UseEndpoints(endpoints =>
             {

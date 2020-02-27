@@ -183,3 +183,4 @@ G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums\obj\Debug\netc
 G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums\obj\Debug\netcoreapp3.1\KSPForums.dll
 G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums\obj\Debug\netcoreapp3.1\KSPForums.pdb
 G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums\obj\Debug\netcoreapp3.1\Razor\Views\Search\Results.cshtml.g.cs
+G:\Farhan(Vacation)\NewWorld\Core(Prac)\Forum\KSPForums\KSPForums\obj\Debug\netcoreapp3.1\Razor\Views\Profile\Detail.cshtml.g.cs
